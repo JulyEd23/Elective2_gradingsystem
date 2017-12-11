@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div align="middle" class="col-1" id="div1" style="display:block">
+		<div class="form-group" style="margin:10px;">   
+			<label align="left">Subject:</label>
+			<select align="middle" class="form-control" id="select1" style="width:50%;">
+				<option>Filipino</option>
+				<option>English</option>
+				<option>Math</option>
+				<option>Science</option>
+				<option>Economics</option>
+			</select> 
+		</div> 
+		<div class="form-group" style="margin:10px;">
+			<label align="left">Activity:</label>
+			<select align="middle" class="form-control" id="select2" style="width:50%;">
+				<option>Quizzes</option>
+				<option>Exam</option>	
+				<option>Seatwork</option>
+				<option>Oral</option>
+			</select>
+		</div>
+		<div class="form-group" style="margin:10px;">
+			<label align="left">Score:</label>
+			<input align="middle" type="text" class="form-control" id="score" style="width:50%;" placeholder=" example... 		     30/45">
+		</div>
+		<div style="margin-top:3%">
+			<button align="middle" type="button" class="btn btn-success" style="width:30%;" onclick="click_add()">Add</button>
+		</div>    
+    </div>
+	<div class="col-1" align="center" id="div2" style="display:none;">
+		<div>
+			<label>Subject: <label id="label1"></label></label>
+			<label></label>
+		</div>
+		<div>
+			<label>Activity: <label id="label2"></label></label>
+		</div>
+		<div>
+			<label>Score: <label id="label3"></label></label>
+		</div>
+		<div>
+			<button align="center" class="btn btn-success" onclick="click_back()">Back</button>
+		</div>
+	</div>
+</body>
+
+</html>
